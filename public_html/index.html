@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Federico Franco</title>
+        <title>Mini Juegos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="resources/style2.css">
@@ -16,7 +16,76 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
     </head>
-    <body>
+    <body id="mainBody">
+        <h1>Mini Juegos</h1>
+        
+        <div id="Batalla-Naval">
+            <div id="tableroNaval">
+                <table class="table table-naval">
+                    
+                    <tbody>
+                        <tr>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                        </tr>
+              
+                        <tr>
+                            <td class="separator"></td>
+                            <td class="separator"></td>
+                            <td class="separator"></td>
+                            <td class="separator"></td>
+                        </tr>
+                        <tr>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                        </tr>
+                        <tr>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                            <td onclick="selectBoat(this)" class="usr"><i class="fas fa-arrow-down"></i></td>
+                        </tr>
+                    </tbody>                    
+                </table>
+                <button class="startGame" onclick="assignAutomaticValues()">Start Game</button>
+                <button class="startGame">Instructions</button>
+                
+            </div>
+        </div>
         
     </body>
 </html>
