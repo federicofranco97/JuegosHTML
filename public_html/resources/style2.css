@@ -1,3 +1,13 @@
+button
+{
+    cursor: pointer;
+}
+
+#controllers
+{
+    margin-left: 20%;
+}
+
 .table
 {
     border: 1px solid black;
@@ -9,6 +19,7 @@ table.table-naval td
     text-align: center;
     border-top: 1px solid black;
     border-right: 1px solid black;
+    cursor: pointer;
     
 }
 
@@ -24,7 +35,9 @@ table.table-naval td
 
 h1
 {
-    text-align: center;
+    margin-left: 42%;
+    padding-top: 40px;
+    
 }
 
 #tableroNaval
@@ -45,4 +58,13 @@ h1
     color:white;
     padding: 8px;
     margin-right: 2%;
+}
+
+#scoreL
+{
+    border: 1px solid black;
+    padding: 8px;
+    width: 20%;
+    color:white;
+    background-color: black;
 }

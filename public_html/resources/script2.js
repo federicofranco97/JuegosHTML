@@ -5,6 +5,7 @@
  */
 
 var selectedboats=0;
+var score=0;
 
 function assignAutomaticValues(){
     var aiCells=document.getElementsByClassName("ai");
@@ -43,6 +44,18 @@ function fillRestUp(){
     }
 }
 
-function usrShoot(){
+function usrShoot(sth){
+    if(sth.name === "boat"){
+        sth.innerHTML="<i class=\"fas fa-skull\"></i>";   
+        sth.name="";
+        score++;
+        document.getElementById("scoreL").innerText="Score: "+score;
+    }else{
+        
+    }
     
+}
+
+function refresh(){
+    location.reload(true);
 }

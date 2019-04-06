@@ -17,7 +17,8 @@
 
     </head>
     <body id="mainBody">
-        <h1>Mini Juegos</h1>
+        
+        <h1>Batalla naval</h1>
         
         <div id="Batalla-Naval">
             <div id="tableroNaval">
@@ -25,28 +26,28 @@
                     
                     <tbody>
                         <tr>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
                         </tr>
                         <tr>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)"  class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
                         </tr>
                         <tr>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
                         </tr>
                         <tr>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
-                            <td class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
+                            <td onclick="usrShoot(this)" class="ai"><i class="fas fa-crosshairs"></i></td>
                         </tr>
               
                         <tr>
@@ -81,8 +82,13 @@
                         </tr>
                     </tbody>                    
                 </table>
-                <button class="startGame" onclick="assignAutomaticValues()">Start Game</button>
-                <button class="startGame">Instructions</button>
+                <div id="controllers">
+                    <button class="startGame" onclick="assignAutomaticValues()">Start Game</button>
+                    <button class="startGame">Instructions</button>                
+                    <label id="scoreL">Score: 0</label>
+                    <button class="startGame" onclick="refresh()">Restart Game</button>
+                </div>
+                
                 
             </div>
         </div>
