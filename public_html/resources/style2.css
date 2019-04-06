@@ -3,6 +3,11 @@ button
     cursor: pointer;
 }
 
+.red-bg
+{
+    background-color: peru;
+}
+
 #controllers
 {
     margin-left: 20%;

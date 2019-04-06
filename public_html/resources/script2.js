@@ -45,11 +45,22 @@ function fillRestUp(){
 }
 
 function usrShoot(sth){
+    var aiCells=document.getElementsByClassName("ai");
+    var cont =0;
+    for(var i=0;i<aiCells.length;i++){
+        if(aiCells[i].name==="boat")cont++;
+    }
+    if(cont===0 && score===0){
+        alert("Presiona Start Game para poder Jugar!");
+        return;
+    }
+    
     if(sth.name === "boat"){
         sth.innerHTML="<i class=\"fas fa-skull\"></i>";   
         sth.name="";
         score++;
         document.getElementById("scoreL").innerText="Score: "+score;
+        checkWin();
     }else{
         
     }
@@ -58,4 +69,39 @@ function usrShoot(sth){
 
 function refresh(){
     location.reload(true);
+}
+
+function checkWin(){
+    if(score===4){
+       swal({
+            title: "Good job!",
+            text: "You Won!",
+            className:"red-bg",
+            dangerMode:true
+        });
+        
+        swal("Game End, would you like to play again?", {
+            className:"red-bg",
+            buttons: {              
+                cancel: "Exit",              
+                play: {                
+                    text: "Play Again",                
+                    value: "play"
+                }
+              
+            }
+          })
+          .then((value) => {
+            switch (value) {
+            
+              case "play":
+                location.reload(true);
+                break;
+
+              default:
+                window.open("index.html");
+            }
+          });
+        
+    }
 }
